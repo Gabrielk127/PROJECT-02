@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-Inter: 'Inter', sans-serif;
+  --ff-Lato: 'Lato', sans-serif;
+  --ff-Raleway: 'Raleway', sans-serif;
+
+  --fs-nav: clamp(0.5rem, 0.5rem + 1.4vw, 1.6rem);
+  --fs-title: clamp(3rem, 1em + 3vw, 7.5rem);
+  --fs-text: clamp(0.5em, 0.5em + 2vw, 2rem);
+  --fs-header-title: clamp(2.5rem, 1rem + 3vw, 3.2rem);
+  --fs-button: clamp(0.5rem, 1rem + 1vw, 2rem);
+  --fs-span: clamp(0.5rem, 0.5rem + 1vw, 2rem);
+  --fs-list: clamp(0.5em, 0.5rem + 1vw, 2rem);
+
+  --fs-footer: clamp(0.5em, 0.5rem + 1vw, 2rem);
+
+
+}
+
+
+body {
+  background-image: url(images/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #03001C;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-family: var(--ff-Raleway);
+  font-style: normal;
+  font-weight: 900;
+  font-size: var(--fs-header-title);
+  line-height: 3.8rem;
+  
+  background: radial-gradient(100% 506.25% at 0% 0%, #F9F7FF 0%, #C9BCF1 49.22%, #8A70DA 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  padding: 2rem 0 4rem;
+
+}
+
+
+header ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+
+  border-bottom: #eeeeee2d solid 1px;
+}
+
+header li {
+  font-family: var(--ff-Inter);
+  font-size: var(--fs-nav);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+
+header li a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+header button {
+  margin-top: 2em;
+  background: radial-gradient(100% 626.68% at 0% 0%, rgba(30, 19, 65, 0.6) 0%, rgba(57, 30, 138, 0.6) 49.19%, rgba(119, 94, 197, 0.6) 94.27%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 25px;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+}
+
+header button a {
+  font-size: var(--fs-button);
+  font-family: var(--ff-Raleway);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.3rem;
+
+  color: #FFFFFF;
+}
+
+/* MAIN */
+.desktop-control {
+  display: none;
+}
+
+main {
+  margin: 4rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main img {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+section {
+  width: 300px;
+}
+
+section span {
+  font-size: var(--fs-span);
+  font-family: var(--ff-Raleway);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.3rem;
+
+  color: #FFFFFF;
+}
+
+section h1 {
+  font-family: var(--ff-Raleway);
+  font-style: normal;
+  font-weight: 900;
+  font-size: var(--fs-title);
+  line-height: 1.2em;
+
+  background: radial-gradient(100% 506.25% at 0% 0%, #F9F7FF 0%, #C9BCF1 49.22%, #8A70DA 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+section p {
+  font-size: var(--fs-text);
+  font-family: var(--ff-Lato);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+
+  color: #EEEEEE;
+
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+section button {
+  background: radial-gradient(100% 626.68% at 0% 0%, rgba(30, 19, 65, 0.6) 0%, rgba(57, 30, 138, 0.6) 49.19%, rgba(119, 94, 197, 0.6) 94.27%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 2.5rem;
+  border: none;
+  width: 10em;
+  height: 2em;
+}
+
+section button a {
+  font-size: var(--fs-button);
+  font-family: var(--ff-Raleway);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.3rem;
+
+  color: #FFFFFF;
+}
+
+section .buttons {
+  display: flex;
+  gap: 3em;
+}
+section button:nth-child(2) {
+  width: 2em;
+  background-color: #C9BCF1;
+}
+
+
+/* section-2 */
+
+
+.main2 img{
+  width: 300px;
+}
+
+.main2 {
+  margin: 10rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main2 section {
+  width: 300px;
+}
+
+.main2 .list {
+ display: flex;
+ gap: 5em;
+}
+
+.list ul li {
+  font-size: var(--fs-list);
+  font-family: var(--ff-Lato);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+
+  color: #EEEEEE;
+}
+
+footer {
+  font-size: var(--fs-footer);
+  font-style: normal;
+  font-weight: 900;
+  font-family: var(--ff-Raleway);
+  text-align: center;
+  padding: 4em;
+
+  background: radial-gradient(100% 506.25% at 0% 0%, #F9F7FF 0%, #C9BCF1 49.22%, #8A70DA 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+footer .line {
+
+  width: 200px;
+ 
+  border: 1px solid #d5dce40a;
+  margin: 0 auto 8px;
+
+}
+
+
+
+
+/* ANIMAÇÕES */
+
+@keyframes topwdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  animation: topwdown 3000ms;
+}
+
+@keyframes left-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+header nav,
+section h1 {
+  animation: left-right 3000ms;
+}
+
+@keyframes Img {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main img,
+.main2 img {
+  animation: Img 3000ms;
+}
+
+/* HOVERS */
+
+header button:hover,
+section button:hover {
+  background: radial-gradient(100% 626.68% at 0% 0%, rgb(71, 23, 226) 0%, rgba(57, 30, 138, 0.6) 49.19%, rgba(119, 94, 197, 0.6) 94.27%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+}
+
+header a:hover {
+  font-weight: bold;
+}
+
+main img:hover {
+  transform: translateX(10px);
+}
