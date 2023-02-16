@@ -13,11 +13,11 @@
 
   --fs-nav: clamp(0.5rem, 0.5rem + 1.4vw, 1.6rem);
   --fs-title: clamp(3rem, 1em + 3vw, 7.5rem);
-  --fs-text: clamp(0.5em, 0.5em + 2vw, 2rem);
+  --fs-text: clamp(0.5em, 0.5em + 2vw, 1.5rem);
   --fs-header-title: clamp(2.5rem, 1rem + 3vw, 3.2rem);
   --fs-button: clamp(0.5rem, 1rem + 1vw, 2rem);
   --fs-span: clamp(0.5rem, 0.5rem + 1vw, 2rem);
-  --fs-list: clamp(0.5em, 0.5rem + 1vw, 2rem);
+  --fs-list: clamp(0.5em, 0.5rem + 1vw, 1.5rem);
 
   --fs-footer: clamp(0.5em, 0.5rem + 1vw, 2rem);
 
@@ -107,6 +107,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  
 }
 main img {
   width: 300px;
@@ -146,7 +148,7 @@ section p {
   font-size: var(--fs-text);
   font-family: var(--ff-Lato);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 2rem;
 
   color: #EEEEEE;
@@ -187,6 +189,9 @@ section button:nth-child(2) {
 
 /* section-2 */
 
+.main2 .desktop-control2 {
+  display: none;
+}
 
 .main2 img{
   width: 300px;
@@ -240,8 +245,129 @@ footer .line {
 
 }
 
+/* MEDIAS */
 
 
+
+@media (min-width:750px) {
+  main .desktop-control {
+    display: flex;
+  }
+  main .mobile-control {
+    display: none;
+  }
+
+  main {
+    flex-direction: row;
+    margin: 5em 5em;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main2 {
+    flex-direction: row;
+    margin: 10em 5em;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main2 .desktop-control2 {
+    display: flex;
+  }
+  .main2 .mobile-control2 {
+    display: none;
+  }
+
+  .main2 .list {
+    flex-direction: column;
+    gap: 0;
+    margin-left: 10em;
+  }
+
+  .main2 .section2 {
+    width: 300px;
+  }
+  .section2 p {
+    text-align: right;
+  }
+  
+  .desktop-control img {
+    width: 400px;
+  }
+
+  .desktop-control2 img {
+    width: 350px;
+  }
+
+  section button {
+    width: 14em;
+    height: 3em;
+  }
+}
+
+@media (min-width:1000px) {
+  header {
+    flex-direction: row;
+    padding: 3rem 9rem;
+    justify-content: space-between;
+    align-items: baseline;
+    
+  }
+  header button {
+    padding: 0;
+    margin: 0;
+  }
+  header h1 {
+    padding: 0;
+    text-align: center;
+  }
+  header ul {
+    align-items: baseline;
+
+  }
+
+  .desktop-control img {
+    width: 600px;
+  }
+  .desktop-control2 img {
+    width: 500px;
+  }
+
+  .main2 .section2 {
+    width: 400px;
+  }
+}
+
+@media (min-width:1350px) {
+  header button {
+    width: 14rem;
+    height: 4rem;
+  }
+
+  main {
+    gap: 22em;
+  }
+
+  .main2 {
+    gap: 20rem;
+  }
+
+  main section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 10rem;
+  }
+
+  .main2 .section2 {
+    width: 550px;
+  }
+  .main2 .section2 p {
+    width: 450px;
+    
+  }
+}
 
 /* ANIMAÇÕES */
 
